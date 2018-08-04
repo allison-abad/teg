@@ -1,0 +1,71 @@
+<!doctype html>
+<html>
+<head>
+    <title>TEG</title>
+    <link rel="stylesheet" href="//netdna.bootstrapcdn.com/bootstrap/3.0.2/css/bootstrap.min.css">
+    <link rel="stylesheet" href="//netdna.bootstrapcdn.com/font-awesome/4.0.3/css/font-awesome.min.css">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+<div class="container">
+<div class="col-sm-6 col-sm-offset-3">
+
+    <h1><span class="fa fa-sign-in"></span> Signup</h1>
+
+    <% if (user.local.email) { %>
+      <p>
+        <strong>email</strong>: <%= user.local.email %><br>
+        <strong>username</strong>: <%= user.local.username %><br>
+      </p>
+
+        <% } %>
+
+
+    <!-- LOGIN FORM -->
+    <form>
+      <!-- <form action="show2" method="POST">
+         <section class="question1">
+          <h3>2 of 4</h3>
+          <p>1.Food Allergies</p>
+          <label for="">Seafood</label>
+          <input class="allergies user-input" type="checkbox" name="allergies" id="allergies">
+          <p>
+          <label for="">Wheat</label>
+          <input id="wheat" type="checkbox" name="" value="">
+        </p>
+        <p>
+          <label for="">Dairy</label>
+          <input id="dairy" type="checkbox" name="" value="">
+        </p>
+        <p>
+          <label for="">Fruit</label>
+          <input id="fruit" type="checkbox" name="" value="">
+        </p>
+        <p>
+          <label for="">Nuts</label>
+          <input id="nuts" type="checkbox" name="" value="">
+        </p>
+        <p>
+          <label for="">none</label>
+          <input id="nada" type="checkbox" name="" value="">
+        </p>
+        <p>
+          <label for="">other</label>
+          <input id="otra" type="text" name="" value="" placeholder="Enter FOOD allergy">
+        </p>
+
+        </section>
+
+          <a href="/signuppagina3"><button type="button" class id="signup-pagina3" "btn btn-warning btn-lg">Next</button></a>
+    </form> -->
+
+    <hr>
+
+    <p>Already a TEG user? <a href="/login">Login</a></p>
+    <p>Back <a href="/">home</a>.</p>
+
+</div>
+</div>
+</body>
+  <script src="signup.js"></script>
+</html>

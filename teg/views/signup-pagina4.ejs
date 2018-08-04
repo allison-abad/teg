@@ -1,0 +1,53 @@
+<!doctype html>
+<html>
+<head>
+    <title>TEG</title>
+    <link rel="stylesheet" href="//netdna.bootstrapcdn.com/bootstrap/3.0.2/css/bootstrap.min.css">
+    <link rel="stylesheet" href="//netdna.bootstrapcdn.com/font-awesome/4.0.3/css/font-awesome.min.css">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+<div class="container">
+<div class="col-sm-6 col-sm-offset-3">
+
+    <h1><span class="fa fa-sign-in"></span> Signup</h1>
+
+    <% if (user.local.email) { %>
+      <p>
+        <strong>email</strong>: <%= user.local.email %><br>
+        <strong>username</strong>: <%= user.local.username %><br>
+      </p>
+
+        <% } %>
+
+
+    <!-- LOGIN FORM -->
+    <form>
+      <form action="show4" method="POST">
+      <section class="question4">
+        <h3>4 of 4</h3>
+        <p>Where do you want to work out?</p>
+        <fieldset>
+            <label for="">Gym</label>
+            <input id="gym" type="radio" name="location" value="Gym">
+            <label for="">Home</label>
+            <input id="home" type="radio" name="location" value="Home">
+            <label for="">Both</label>
+            <input id="both" type="radio" name="location" value="Both">
+
+        </fieldset>
+      </section>
+
+        <a href="/profile"><button type="button" class id="profile" "btn btn-warning btn-lg">Next</button></a>
+    </form>
+
+    <hr>
+
+    <p>Already a TEG user? <a href="/login">Login</a></p>
+    <p>Back <a href="/">home</a>.</p>
+
+</div>
+</div>
+</body>
+  <script src="signup.js"></script>
+</html>

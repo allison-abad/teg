@@ -7,8 +7,21 @@ var userSchema = mongoose.Schema({
 
     local            : {
         email        : String,
-        password     : String
-    },
+        password     : String,
+        username     : String,
+        test         : String,
+        currentweight  : Number,
+        goalWeight     : Number,
+        allergies      : {type: Array,enum: 'Seafood', 'Wheat'},
+        location       : {type: String,enum : ['GYM','HOME','BOTH']},
+        fitnessgoals   : {type: String,enum : ['TONE','BUILD MUSCLE','LOSE WEIGHT','IMPROVE FLEXIBILTY','CARDIO',"NUTRITION"]},
+      },
+
+
+
+    //,default: 'GYM'
+    //,default:'NUTRITION'
+
     facebook         : {
         id           : String,
         token        : String,

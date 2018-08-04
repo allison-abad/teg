@@ -1,0 +1,262 @@
+<!doctype html>
+<html>
+<head>
+  <title>TEG</title>
+  <link rel="stylesheet" href="//netdna.bootstrapcdn.com/bootstrap/3.0.2/css/bootstrap.min.css">
+  <link rel="stylesheet" href="//netdna.bootstrapcdn.com/font-awesome/4.0.3/css/font-awesome.min.css">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <div class="container">
+
+    <div class="page-header text-center">
+      <h1><span class="fa fa-anchor"></span> Profile Page</h1>
+      <a href="/logout" class="btn btn-default btn-sm">Logout</a>
+    </div>
+
+    <div class="row">
+
+      <!-- LOCAL INFORMATION -->
+      <div class="col-sm-6">
+        <div class="well">
+          <h3><span class="fa fa-user"></span> Local</h3>
+
+          <% if (user.local.email) { %>
+            <p>
+              <strong>id</strong>: <%= user._id %><br>
+              <strong>email</strong>: <%= user.local.email %><br>
+              <strong>password</strong>: <%= user.local.password %><br>
+              <strong>email</strong>: <%= user.local.email %><br>
+              <strong>email</strong>: <%= user.local.email %><br>
+
+
+            </p>
+
+            <a href="/unlink/local" class="btn btn-default">Unlink</a>
+            <% } else { %>
+              <a href="/connect/local" class="btn btn-default">Connect Local</a>
+              <% } %>
+
+            </div>
+          </div>
+
+
+
+  <!--
+  CONTENT FOR Profile/DASHBOARD PAGE
+
+  health
+  Steps
+  calories
+  distance - running
+  Weight
+  sleep - hours
+
+  Food
+  breakfast
+  lunch
+  dinner
+  healthy snacks
+
+  Exercises
+  Home
+  Gym
+  Cardio
+  Flexibility
+  Muscle
+-->
+
+<h2>Tracker</h2>
+<section>
+  <ul>
+    <li>steps</li>
+    <li>calories</li>
+    <li>distance - running</li>
+    <li>Weight</li>
+    <li>sleep - hours</li>
+  </ul>
+</section>
+
+<h2>Meals</h2>
+<section>
+  <ul>
+    <a href="#"><li>Breakfast</li></a>
+    <section>
+      <ul>
+        <li>Egg omelet with spinach and tomato , small bowl of fruit</li>
+        <h4>Recipe:</h4>
+        <h4>Ingredients:</h4>
+        <h4>Instructions:</h4>
+        <li>Fruit Smoothie mix chia seeds/flax seeds mix (with protein of choice )</li>
+        <h4>Recipe:</h4>
+        <h4>Ingredients:</h4>
+        <h4>Instructions:</h4>
+        <li>Oatmeal (peanut butter/almond butter add fruit of choice)</li>
+        <h4>Recipe:</h4>
+        <h4>Ingredients:</h4>
+        <h4>Instructions:</h4>
+      </ul>
+      <strong>Other Ideas</strong>
+      <section>
+        <ul>
+          <a href="#"><li>Wheat Toast egg with avocado spread</li></a>
+          <a href="#"><li>Eggs toast and fruit</li></a>
+          <a href="#"><li>Wheat Toast, peanut butter/almond butter spread,  Banana slices, sprinkled with chia seeds</li></a>
+        </ul>
+      </section>
+      <a href="#">Lunch</a>
+      <section>
+        <ul>
+          <li>Wrap, stuffed with tuna/egg salad</li>
+          <h4>Recipe:</h4>
+          <h4>Ingredients:</h4>
+          <h4>Instructions:</h4>
+          <li>Kale salad with Salmon and avocado (can add brown rice/ white rice and beans)</li>
+          <h4>Recipe:</h4>
+          <h4>Ingredients:</h4>
+          <h4>Instructions:</h4>
+          <li>Peanut butter/almond banana sandwich</li>
+          <h4>Recipe:</h4>
+          <h4>Ingredients:</h4>
+          <h4>Instructions:</h4>
+        </ul>
+        <strong>Other Ideas</strong>
+        <section>
+          <a href="#"><li>Fish tacos</li></a>
+          <a href="#"><li>Grilled chicken and chickpeas pita sandwich</li></a>
+          <a href="#"><li>Sweet potato, grilled chicken and green salad</li></a>
+        </section>
+
+        <a href="#">Dinner</a>
+        <section>
+          <ul>
+            <li>Turkey patties,quinoa, salad</li>
+            <h4>Recipe:</h4>
+            <h4>Ingredients:</h4>
+            <h4>Instructions:</h4>
+            <li>Stuffed Bell Peppers with meat of choice and feta cheese</li>
+            <h4>Recipe:</h4>
+            <h4>Ingredients:</h4>
+            <h4>Instructions:</h4>
+            <li>Lettuce wrap(meat of choice and avocado, corn,)</li>
+            <h4>Recipe:</h4>
+            <h4>Ingredients:</h4>
+            <h4>Instructions:</h4>
+          </ul>
+
+          <strong>Other Ideas</strong>
+          <section>
+            <a href="#"><li>Brown rice, shrimp, salad</li></a>
+            <a href="#"><li>Zucchini Boat</li></a>
+            <a href="#"><li>Creamy Cajun chicken pasta</li></a>
+          </section>
+        </section>
+
+        <h2>Workouts</h2>
+        <strong>Home:</strong>
+        <h4>Leg's</h4>
+        <ul>
+          <li>Lunges</li>
+          <img src="" alt="lunges">
+          <strong><p>Instructions:</p></strong>
+          <strong><p>Materials Needed:</p></strong>
+          <li>Wall sits</li>
+          <img src="" alt="wall sits">
+          <strong><p>Instructions:</p></strong>
+          <strong><p>Materials Needed:</p></strong>
+          <li>Side legs raises</li>
+          <img src="" alt="sideRaises">
+          <strong><p>Instructions:</p></strong>
+          <strong><p>Materials Needed:</p></strong>
+          <li>Squats</li>
+          <img src="" alt="squats">
+          <strong><p>Instructions:</p></strong>
+          <strong><p>Materials Needed:</p></strong>
+          <li>Sumo Squats</li>
+          <img src="" alt="sumo">
+          <strong><p>Instructions:</p></strong>
+          <strong><p>Materials Needed:</p></strong>
+          <li>Leg extensions</li>
+          <img src="" alt="extensions">
+          <strong><p>Instructions:</p></strong>
+          <strong><p>Materials Needed:</p></strong>
+          <li>Side leg extensions</li>
+          <img src="" alt="sideExtension">
+          <strong><p>Instructions:</p></strong>
+          <strong><p>Materials Needed:</p></strong>
+          <li>Calf raises</li>
+          <img src="" alt="calf">
+          <strong><p>Instructions:</p></strong>
+          <strong><p>Materials Needed:</p></strong>
+        </ul>
+          <h4>Arm's</h4>
+          <li>Bicep curls</li>
+          <img src="" alt="bicep">
+          <strong><p>Instructions:</p></strong>
+          <strong><p>Materials Needed:</p></strong>
+          <li>Tricep curls</li>
+          <img src="" alt="tricep">
+          <strong><p>Instructions:</p></strong>
+          <strong><p>Materials Needed:</p></strong>
+          <li>Push Up's</li>
+          <img src="" alt="pushUps">
+          <strong><p>Instructions:</p></strong>
+          <strong><p>Materials Needed:</p></strong>
+          <li>Tricep kickbacks</li>
+          <img src="" alt="kickbacks">
+          <strong><p>Instructions:</p></strong>
+          <strong><p>Materials Needed:</p></strong>
+          <li>Dips</li>
+          <img src="" alt="dips">
+          <strong><p>Instructions:</p></strong>
+          <strong><p>Materials Needed:</p></strong>
+          <li>Plank Ups</li>
+          <img src="" alt="dips">
+          <strong><p>Instructions:</p></strong>
+          <strong><p>Materials Needed:</p></strong>
+          <li></li>
+          <img src="" alt="dips">
+          <strong><p>Instructions:</p></strong>
+          <strong><p>Materials Needed:</p></strong>
+
+          <h4>Back</h4>
+          <li>Bird dogs</li>
+          <img src="" alt="bird">
+          <strong><p>Instructions:</p></strong>
+          <strong><p>Materials Needed:</p></strong>
+          <li>Superman</li>
+          <img src="" alt="superman">
+          <strong><p>Instructions:</p></strong>
+          <strong><p>Materials Needed:</p></strong>
+          <li>Deadlift Row</li>
+          <img src="" alt="deadliftRow">
+          <strong><p>Instructions:</p></strong>
+          <strong><p>Materials Needed:</p></strong>
+          <li>Bird dogs</li>
+          <img src="" alt="bird">
+          <strong><p>Instructions:</p></strong>
+          <strong><p>Materials Needed:</p></strong>
+          <li>Reverse Snow Angel</li>
+          <img src="" alt="snow">
+          <strong><p>Instructions:</p></strong>
+          <strong><p>Materials Needed:</p></strong>
+          <li></li>
+          <img src="" alt="bird">
+          <strong><p>Instructions:</p></strong>
+          <strong><p>Materials Needed:</p></strong>
+
+
+
+
+
+
+
+      </section>
+
+
+    </div>
+
+    <script src="main.js"></script>
+
+  </body>
+  </html>

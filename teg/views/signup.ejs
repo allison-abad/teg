@@ -1,0 +1,236 @@
+<!doctype html>
+<html>
+<head>
+    <title>TEG</title>
+    <link rel="stylesheet" href="//netdna.bootstrapcdn.com/bootstrap/3.0.2/css/bootstrap.min.css">
+    <link rel="stylesheet" href="//netdna.bootstrapcdn.com/font-awesome/4.0.3/css/font-awesome.min.css">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+<div class="container">
+<div class="col-sm-6 col-sm-offset-3">
+
+    <h1><span class="fa fa-sign-in"></span> Signup</h1>
+
+    <% if (message.length > 0) { %>
+        <div class="alert alert-danger"><%= message %></div>
+    <% } %>
+
+    <!-- LOGIN FORM -->
+    <form action="/signup" method="post">
+        <div class="form-group">
+          <label>Name</label>
+          <input type="text" class="form-control" name="username" placeholder="User Name" id="username">
+        </div>
+        <div class="form-group">
+            <label>Email</label>
+            <input type="text" class="form-control" name="email" id="email">
+        </div>
+        <div class="form-group">
+            <label>Password</label>
+            <input type="password" class="form-control" name="password" id="password">
+        </div>
+        <div class="form-group">
+            <label>TEST</label>
+            <input type="test" class="form-control" name="test" id="test">
+        </div>
+
+
+
+
+
+
+        <div class="form-group">
+          <section class="question1">
+           <h3>1 of 4</h3>
+           <p>1. Current Weight</p>
+           <input class="currentWeight form-control user-input" type="text" name="currentWeight" id="currentWeight">
+           <p>2. Goal Weight</p>
+           <input class="goalWeight form-control user-input" type="text" name="goalWeight" id="goalWeight">
+         </section>
+
+            <section class="question1">
+             <h3>2 of 4</h3>
+             <p>1.Food Allergies</p>
+             <label for="">Seafood</label>
+             <input class="allergies user-input" type="checkbox" name="allergies" id="allergies">
+             <p>
+             <label for="">Wheat</label>
+             <input id="wheat" type="checkbox" name="" value="">
+           </p>
+           <p>
+             <label for="">Dairy</label>
+             <input id="dairy" type="checkbox" name="" value="">
+           </p>
+           <p>
+             <label for="">Fruit</label>
+             <input id="fruit" type="checkbox" name="" value="">
+           </p>
+           <p>
+             <label for="">Nuts</label>
+             <input id="nuts" type="checkbox" name="" value="">
+           </p>
+           <p>
+             <label for="">none</label>
+             <input id="nada" type="checkbox" name="" value="">
+           </p>
+           <p>
+             <label for="">other</label>
+             <input id="otra" type="text" name="" value="" placeholder="Enter FOOD allergy">
+           </p>
+
+           </section>
+
+
+           <section>
+             <h3>1. Fitness Goals?</h3>
+             <form class="allergies" action="index.html" method="post">
+               <fieldset>
+                 <legend>What are your fitness goals?</legend>
+                 <p>
+                   <label for="">Lose weight</label>
+                   <input id="loseWeight" type="checkbox" name="" value="">
+                 </p>
+                 <p>
+                   <label for="">Tone Body</label>
+                   <input id="tone" type="checkbox" name="" value="">
+                 </p>
+                 <p>
+                   <label for="">Build Muscle</label>
+                   <input id="muscle" type="checkbox" name="" value="">
+                 </p>
+                 <p>
+                   <label for="">Endurance/Cardio</label>
+                   <input id="cardio" type="checkbox" name="" value="">
+                 </p>
+                 <p>
+                   <label for="">Improve Flexibility/Balance</label>
+                   <input id="flex" type="checkbox" name="" value="">
+                 </p>
+                 <p>
+                   <label for="">Improve Nutrition/Diet</label>
+                   <input id="diet" type="checkbox" name="" value="">
+                 </p>
+               </fieldset>
+           </section>
+
+           <section class="question4">
+             <h3>4 of 4</h3>
+             <p>Where do you want to work out?</p>
+             <fieldset>
+                 <label for="">Gym</label>
+                 <input id="gym" type="radio" name="location" value="Gym">
+                 <label for="">Home</label>
+                 <input id="home" type="radio" name="location" value="Home">
+                 <label for="">Both</label>
+                 <input id="both" type="radio" name="location" value="Both">
+
+             </fieldset>
+        </div>
+
+
+
+        <!-- <section class="question1">
+          <h3>1 of 4</h3>
+          <p>1. Current Weight</p>
+          <input class="currentWeight user-input" type="text" name="" value="">
+          <p>2. Goal Weight</p>
+          <input class="goalWeight user-input" type="text" name="" value="">
+        </section>
+        <section class="question2">
+          <h3>2 of 4</h3>
+          <p>2. Food Allergies</p>
+          <form class="allergies" action="index.html" method="post">
+            <fieldset>
+              <legend>Do you have any food allergies?</legend>
+              <p>
+                <label for="">Seafood</label>
+                <input id="seafood" type="checkbox" name="" value="">
+              </p>
+              <p>
+                <label for="">Wheat</label>
+                <input id="wheat" type="checkbox" name="" value="">
+              </p>
+              <p>
+                <label for="">Dairy</label>
+                <input id="dairy" type="checkbox" name="" value="">
+              </p>
+              <p>
+                <label for="">Fruit</label>
+                <input id="fruit" type="checkbox" name="" value="">
+              </p>
+              <p>
+                <label for="">Nuts</label>
+                <input id="nuts" type="checkbox" name="" value="">
+              </p>
+              <p>
+                <label for="">None</label>
+                <input id="none" type="checkbox" name="" value="">
+              </p>
+              <p>
+                <label for="">Other</label>
+                <input id="other" type="text" name="" value="" placeholder="Enter FOOD allergy">
+              </p>
+            </fieldset>
+          </form>
+        </section>
+        <section class="question3">
+          <h3>3 of 4</h3>
+          <p>1. Fitness Goals?</p>
+          <form class="allergies" action="index.html" method="post">
+            <fieldset>
+              <legend>What are your fitness goals?</legend>
+              <p>
+                <label for="">Lose weight</label>
+                <input id="loseWeight" type="checkbox" name="" value="">
+              </p>
+              <p>
+                <label for="">Tone Body</label>
+                <input id="tone" type="checkbox" name="" value="">
+              </p>
+              <p>
+                <label for="">Build Muscle</label>
+                <input id="muscle" type="checkbox" name="" value="">
+              </p>
+              <p>
+                <label for="">Endurance/Cardio</label>
+                <input id="cardio" type="checkbox" name="" value="">
+              </p>
+              <p>
+                <label for="">Improve Flexibility/Balance</label>
+                <input id="flex" type="checkbox" name="" value="">
+              </p>
+              <p>
+                <label for="">Improve Nutrition/Diet</label>
+                <input id="diet" type="checkbox" name="" value="">
+              </p>
+            </fieldset>
+          </form>
+        </section>
+        <section class="question4">
+          <h3>4 of 4</h3>
+          <p>Where do you want to work out?</p>
+          <fieldset>
+              <label for="">Gym</label>
+              <input id="gym" type="radio" name="location" value="Gym">
+              <label for="">Home</label>
+              <input id="home" type="radio" name="location" value="Home">
+              <label for="">Both</label>
+              <input id="both" type="radio" name="location" value="Both">
+
+          </fieldset>
+        </section>
+         -->
+      <button type="submit" id="get-started" class="btn btn-warning btn-lg">Let's Get started</button>
+    </form>
+
+    <hr>
+
+    <p>Already a TEG user? <a href="/login">Login</a></p>
+    <p>Back <a href="/">home</a>.</p>
+
+</div>
+</div>
+</body>
+<script src="signup.js"></script>
+</html>

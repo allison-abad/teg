@@ -1,0 +1,80 @@
+<!doctype html>
+<html>
+<head>
+    <title>TEG</title>
+    <link rel="stylesheet" href="//netdna.bootstrapcdn.com/bootstrap/3.0.2/css/bootstrap.min.css">
+    <link rel="stylesheet" href="//netdna.bootstrapcdn.com/font-awesome/4.0.3/css/font-awesome.min.css">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+<div class="container">
+<div class="col-sm-6 col-sm-offset-3">
+
+    <h1><span class="fa fa-sign-in"></span> Signup</h1>
+
+    <% if (user.local.email) { %>
+      <p>
+        <strong>email</strong>: <%= user.local.email %><br>
+        <strong>username</strong>: <%= user.local.username %><br>
+      </p>
+
+        <% } %>
+
+
+    <!-- LOGIN FORM -->
+    <form>
+      <form action="show3" method="POST">
+         <section class="question1">
+           <!-- <h3>1. Fitness Goals?</h3>
+           <form class="allergies" action="index.html" method="post">
+             <fieldset>
+               <legend>What are your fitness goals?</legend>
+               <p>
+                 <label for="">Lose weight</label>
+                 <input id="loseWeight" type="checkbox" name="" value="">
+               </p>
+               <p>
+                 <label for="">Tone Body</label>
+                 <input id="tone" type="checkbox" name="" value="">
+               </p>
+               <p>
+                 <label for="">Build Muscle</label>
+                 <input id="muscle" type="checkbox" name="" value="">
+               </p>
+               <p>
+                 <label for="">Endurance/Cardio</label>
+                 <input id="cardio" type="checkbox" name="" value="">
+               </p>
+               <p>
+                 <label for="">Improve Flexibility/Balance</label>
+                 <input id="flex" type="checkbox" name="" value="">
+               </p>
+               <p>
+                 <label for="">Improve Nutrition/Diet</label>
+                 <input id="diet" type="checkbox" name="" value="">
+               </p>
+             </fieldset> -->
+           </form>
+
+
+
+
+
+
+
+
+        </section>
+
+        <a href="/signuppagina4"><button type="button" class id="signup-pagina4" "btn btn-warning btn-lg">Next</button></a>
+    </form>
+
+    <hr>
+
+    <p>Already a TEG user? <a href="/login">Login</a></p>
+    <p>Back <a href="/">home</a>.</p>
+
+</div>
+</div>
+</body>
+  <script src="signup.js"></script>
+</html>
